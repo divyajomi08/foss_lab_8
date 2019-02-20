@@ -1,0 +1,15 @@
+#!/bin/sh
+uname -a
+echo "AVAILABLE SHELLS"
+cat /etc/shells
+echo " MEMORY INFORMATION"
+free -m
+echo "FILE SYSTEMS"
+df -T
+echo "CPU DETAILS"
+cat /proc/cpuinfo
+echo " HARD DISK INFORMATION"
+df -aTh
+
+
+

@@ -1,0 +1,10 @@
+#!/bin/sh
+echo "CURRENTLY LOGGED USER'S USER NAME : $USER"
+echo " CURRENT SHELL : $SHELL"
+echo "CURRENT HOME DIRECTORY : $HOME"
+
+echo "OS type :"
+uname -a
+echo "CURRENT WORKING DIRECTORY : $PWD"
+echo "NUMBER OF USERS CURRENTLY LOGGED IN :" who | wc -l
+

@@ -1,0 +1,5 @@
+echo "1:"
+ls -tl | sed -n 2p
+echo "2:"
+ls -Art | tail -n 1
+

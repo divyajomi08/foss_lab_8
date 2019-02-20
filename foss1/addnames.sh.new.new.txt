@@ -1,0 +1,22 @@
+#!/bin/bash
+echo $#
+if [ "$#" -ne 2 ];
+then
+	echo " NUMBER OF ARGUMENTS PASSED IS INCORRECT"
+else
+	echo "NUMBER OF ARGUMENTS PASSED IS CORRECT"
+fi
+if [ -e $1 ];
+then
+	echo "FILE EXISTS"
+else
+	echo " FILE DOESNT EXISTS"
+fi
+
+if grep $2 $1 ;
+then
+	echo "USERNAME EXISTS"
+else
+	 echo "$2" >> $1
+	echo "USERNAME ADDED TO LIST"
+fi
